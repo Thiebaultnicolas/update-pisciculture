@@ -1,0 +1,131 @@
+/* Style pour l'article */
+.article {
+  margin: 20px; /* Ajoutez une marge autour de l'article */
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Style pour le contenu de l'article (titre, sous-titre, texte) */
+.article-content {
+  text-align: left; /* Alignez le texte à gauche */
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+}
+
+/* Style pour les titres */
+.article h2,
+.article h3 {
+  font-size: 50px; /* Ajustez la taille du titre */
+  margin: 0;
+  font-family: "Salsa", cursive;
+}
+
+/* Style pour le sous-titre */
+.article h3 {
+  font-size: 27px; /* Ajustez la taille du sous-titre */
+}
+
+/* Assurez-vous que les titres sont alignés avec les paragraphes */
+.article h2,
+.article h3 {
+  margin-left: 17%; /* Ajustez la marge à gauche pour l'alignement */
+}
+
+/* Style pour les paragraphes */
+.article-content .présentation p {
+  font-size: 17px; /* Ajustez la taille du texte */
+}
+
+.article p {
+  margin-top: 0;
+}
+
+/* Style pour l'image */
+.article-image img {
+  height: 460px;
+  width: 90%;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: -12px 12px 57px 10px rgba(16, 45, 94, 0.17);
+  margin-left: 120px; /* Ajoutez une marge à gauche pour l'écart avec les paragraphes */
+}
+
+/* Style pour le bouton Événements à venir */
+.article-content .présentation button {
+  background-color: #a5b857; /* Couleur de fond */
+  color: floralwhite; /* Couleur du texte */
+  text-transform: uppercase; /* Mettez le texte en majuscules */
+  padding: 10px 20px; /* Ajustez les rembourrages selon vos besoins */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animation de couleur de fond et de déplacement */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Ajoutez une ombre portée pour faire ressortir le texte */
+  font-size: 20px; /* Ajustez la taille de la police pour augmenter la taille du texte */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Style pour la div des poissons */
+.article-content .présentation .fish-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Permet aux événements de souris de passer à travers */
+  opacity: 0; /* Initialement invisible */
+  transition: opacity 0.3s ease; /* Animation de fondu lors de l'apparition/disparition */
+  overflow: hidden;
+}
+
+/* Style pour chaque poisson */
+.article-content .présentation .fish {
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700; /* Couleur du poisson, vous pouvez ajuster */
+  border-radius: 50%;
+  position: absolute;
+  animation: fish-swim 3s linear infinite; /* Animation de nage du poisson */
+}
+
+/* Animation de nage des poissons */
+@keyframes fish-swim {
+  0%, 100% {
+    top: 50%;
+    left: 0%;
+  }
+  25% {
+    top: 0%;
+    left: 50%;
+  }
+  50% {
+    top: 50%;
+    left: 100%;
+  }
+  75% {
+    top: 100%;
+    left: 50%;
+  }
+}
+
+/* Animation au survol du bouton */
+.article-content .présentation button:hover {
+  background-color: #a5b857; /* Nouvelle couleur de fond au survol */
+  transform: scale(1.1); /* Léger agrandissement au survol */
+}
+
+/* Animation de fondu des poissons */
+.article-content .présentation button:hover .fish-container {
+  opacity: 1;
+}
+
+.Button-evenements {
+  text-align: center;
+  margin-top: 50px;
+}

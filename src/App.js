@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
 import './App.css';
+import Header from './Components/Pages/Accueil/Header.js';
+import BannerAccueil from '../src/Assets/Pisciculture.jpg'
+import { Banner } from './Components/Pages/Accueil/Banner.js';
+import Article from './Components/Pages/Accueil/Article.js'; // Importez le composant Article
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="App-Accueil">
+        <Header />
+        <Banner image={BannerAccueil} />
+        {/* Ajoutez d'autres composants et contenu ici */}
       </header>
+      <Article />
     </div>
   );
 }

@@ -1,0 +1,54 @@
+/* Styles pour le composant Banner */
+.banner-accueil {
+  position: relative;
+  width: 100%; /* Utilisez 100% de la largeur de la fenêtre */
+  height: 750px; /* Réglez la hauteur en pixels (par exemple, 650px) */
+  overflow: hidden;
+  text-align: center; /* Centre le contenu horizontalement */
+}
+
+/* Style pour l'image de la bannière */
+.imageBanniereAccueil {
+  width: 100%;
+  height: auto; /* Pour conserver la proportion de l'image en hauteur */
+  display: block;
+  margin: 0 auto; /* Centre l'image horizontalement */
+}
+
+/* Pseudo-élément pour créer une forme inclinée à la limite inférieure de la bannière */
+.banner-accueil::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Ajustez la hauteur de la forme selon vos préférences */
+  background: linear-gradient(to bottom left, transparent 49.5%, #fff 50.5%); /* Ajustement subtil pour atténuer les striures */
+}
+  
+  /* Style pour simuler un effet de voile */
+  .banner-accueil::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Couleur de fond semi-transparente (blanc dans cet exemple) */
+  }
+
+/* Style pour le logo-container */
+.logo-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Utilisez translate pour centrer le logo */
+}
+
+/* Style pour le nouveau logo */
+.new-logo {
+  width: 100%; /* Ajustez la largeur du logo selon vos préférences */
+  height: auto;
+  filter: invert(100%); /* Inverser les couleurs pour obtenir un logo blanc */
+  margin-left: 25px;
+}
