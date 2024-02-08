@@ -1,0 +1,73 @@
+.footer {
+    display: flex;
+    background-color: #5D7052;
+    color: #fff;
+    justify-content: space-around;
+  }
+  
+  .footer-content {
+    display: flex;
+
+  }
+  
+ 
+
+  .centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .centered-icon {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-right: 10px;
+    color: #a5b857;
+    
+  }
+  
+  .column-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Facebook-icon {
+    font-size: 45px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    color: white;
+    transition: color 0.3s; /* Ajoute une transition pour un effet plus fluide */
+  }
+
+  .Facebook-icon:hover {
+    color: #a5b857; /* La couleur au survol */
+  }
+
+  .Instagram-icon {
+    margin-left:25px; /* Ajustez la marge entre les icônes */
+    margin-bottom: 5px;
+    color: #e1306c; /* Couleur d'Instagram */
+    font-size: 53px;
+    transition: color 0.3s; /* Ajoute une transition pour un effet plus fluide */
+    color: white;
+  }
+
+  .Instagram-icon:hover {
+    color: #a5b857; /* La couleur au survol */
+  }
+
+  .footer-text h4 {
+    font-family: "Salsa", cursive;
+    padding: 0px 0px 0px 15px;
+    border-style: solid;
+    border-width: 0px 0px 0px 3px;
+    border-color: #a5b857;
+  }
+  
+  .footer-text p {
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.5; /* Ajustez la valeur selon vos préférences */
+  }
+

@@ -1,23 +1,34 @@
+// Import des dépendances
 import React, { useState } from "react";
-import "../../../Styles/Article.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFish, faFishFins  } from "@fortawesome/free-solid-svg-icons";
+import "../../../Styles/Accueil/Article.css";
 import EtangBouriche from "../../../Assets/EtangBouriche.jpg";
 
+// Définition du composant Article
 function Article() {
+  // État pour gérer la visibilité des confettis
   const [confettiVisible, setConfettiVisible] = useState(false);
 
+  // Gestion du clic sur le bouton
   const handleButtonClick = () => {
     // Logique pour gérer le clic sur le bouton (vous pouvez ajouter la redirection ici)
     console.log("Redirigez vers la nouvelle page React");
   };
 
+  // Gestion du survol du bouton
   const handleButtonHover = () => {
     // Mettez à jour l'état pour rendre les confettis visibles au survol
     setConfettiVisible(true);
     // Vous pouvez également ajouter d'autres logiques ici si nécessaire
   };
 
-  const confettiAnimation = confettiVisible ? "confetti-container visible" : "confetti-container";
+  // Classe CSS pour l'animation des confettis
+  const confettiAnimation = confettiVisible
+    ? "confetti-container visible"
+    : "confetti-container";
 
+  // Rendu du composant
   return (
     <div className="article">
       <h2>La Pisciculture du Claireau</h2>
@@ -46,7 +57,7 @@ function Article() {
             L’ensemble du site est alimenté par une source, le Clérot. La
             qualité de l’eau,<br></br> l’alimentation et toute l’attention
             apportée au respect du cycle de grossissement<br></br> des truites
-            sont un gage de qualité.Depuis de nombreuses années, notre
+            sont un gage de qualité. Depuis de nombreuses années, notre
             spécialité<br></br> la truite fumée est reconnue et est très
             appréciée de nos clients pour sa qualité<br></br>gustative.
           </p>
@@ -54,8 +65,13 @@ function Article() {
             <button onClick={handleButtonClick} onMouseOver={handleButtonHover}>
               Événements à venir
               <div className={confettiAnimation}>
-                {/* Utilisez le composant FontAwesomeIcon avec l'icône de poisson */}
-                
+                {/* Ajoute la classe 'fish-container' ici */}
+                <div className={`fish-container`}>
+                  {/* Utilise le composant FontAwesomeIcon avec l'icône de poisson */}
+                  <FontAwesomeIcon icon={faFish} className="fish" />
+                  <FontAwesomeIcon icon={faFishFins} className="fish fish-second"/>
+                 
+                </div>
               </div>
             </button>
           </div>
@@ -68,4 +84,5 @@ function Article() {
   );
 }
 
+// Export du composant Article
 export default Article;

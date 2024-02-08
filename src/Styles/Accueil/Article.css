@@ -53,7 +53,7 @@
 /* Style pour le bouton Événements à venir */
 .article-content .présentation button {
   background-color: #a5b857; /* Couleur de fond */
-  color: floralwhite; /* Couleur du texte */
+  color: #f2f2f2; /* Couleur du texte */
   text-transform: uppercase; /* Mettez le texte en majuscules */
   padding: 10px 20px; /* Ajustez les rembourrages selon vos besoins */
   border: none;
@@ -86,9 +86,8 @@
 
 /* Style pour chaque poisson */
 .article-content .présentation .fish {
-  width: 20px;
-  height: 20px;
-  background-color: #ffd700; /* Couleur du poisson, vous pouvez ajuster */
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   position: absolute;
   animation: fish-swim 3s linear infinite; /* Animation de nage du poisson */
