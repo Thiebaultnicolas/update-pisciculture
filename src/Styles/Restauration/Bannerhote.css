@@ -1,0 +1,18 @@
+
+  /* Tabledhote.css */
+.banner-tabledhote {
+    position: relative;
+    height: 550px; /* Ajustez la hauteur de la bannière selon vos besoins */
+  }
+  
+  .banner-tabledhote .imageBanniereAccueil {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -810px; /* Déplace l'image de 20 pixels vers le bas */
+  }
+
+  /* Ajout de la règle pour la classe banner-tabledhote */
+.banner-tabledhote.no-gradient::after {
+    display: none;
+  }

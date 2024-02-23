@@ -1,17 +1,18 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter} from 'react-router-dom';
-import TableDhote from '../Components/Pages/Restauration/Tabledhote.js'; // Assurez-vous que le chemin est correct
+import { Route, Routes } from 'react-router-dom';
+import Accueil from '../Pages/Accueil.jsx';
+import TableDhote from '../Components/Restauration/Bannerhote.js'; // Assurez-vous que le chemin est correct
 
 function Path() {
-  return (
-    <BrowserRouter >
-          <Routes>
-              <Route path="table/:id" element={<TableDhote/>} />
-          </Routes>
-    </BrowserRouter >
-  )
+    return (
+        <Routes>
+            <Route path="/" element={<Accueil />} />
+            <Route path="table" element={<TableDhote />} />
+            <Route path="snacking" element={<TableDhote />} />
+        </Routes>
+    );
 }
 
-export default Path
+export default Path;
 
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../../../Styles/Accueil/Header.css";
-import NewLogoBleu from "../../../Assets/NewlogoBleu.png"; // Importez le nouveau logo bleu
-import { Link } from 'react-router-dom';
+import "../../Styles/Accueil/Header.css";
+import NewLogoBleu from "../../Assets/NewlogoBleu.png"; // Importez le nouveau logo bleu
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isHoveredPeche, setIsHoveredPeche] = useState(false); // État pour suivre le survol de "Pêche"
@@ -51,8 +51,12 @@ function Header() {
               }`}
             ></i>{" "}
             <div className="dropdown-content">
-              <a href="#">Snacking</a>
-              <Link to="/table/${id}">Table d'hôte</Link>
+              <Link to={"/"}>
+                <a href="#">Snacking</a>
+              </Link>
+              <Link to={"table"}>
+                <a href="#">Table d'hôte</a>
+              </Link>
             </div>
           </li>
           <li>Notre Produit</li>

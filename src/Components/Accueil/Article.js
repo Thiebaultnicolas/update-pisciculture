@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFish, faFishFins  } from "@fortawesome/free-solid-svg-icons";
-import "../../../Styles/Accueil/Article.css";
-import EtangBouriche from "../../../Assets/EtangBouriche.jpg";
+import "../../Styles/Accueil/Article.css";
+import EtangBouriche from "../../Assets/EtangBouriche.jpg";
 
 // Définition du composant Article
 function Article() {

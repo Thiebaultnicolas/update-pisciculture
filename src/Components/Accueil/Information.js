@@ -11,24 +11,20 @@ import {
   faSquareParking,
   faTrash, 
 } from "@fortawesome/free-solid-svg-icons";
-import { faMugHot, faGripLines  } from "@fortawesome/free-solid-svg-icons";
-import "../../../Styles/Accueil/Information.css";
+import { faMugHot } from "@fortawesome/free-solid-svg-icons";
+import "../../Styles/Accueil/Information.css";
 
 function Information() {
   return (
     <div className="banner-container">
-      <div className="centered-icon">
-      <FontAwesomeIcon icon={faGripLines} className="centered-icon" />
-      </div>
       <div className="information">
         <div className="info-item">
           <div className="info-content">
             <FontAwesomeIcon icon={faMugHot} className="info-icon" />
             <div className="info-text">
-              <h3>Bar</h3>
+              <h3>Bar & Restaurant</h3>
               <p>
-                Dégustez un en-cas rapide ou savourez une boisson sur place. Trouvez
-                également tout l'équipement de pêche dont vous avez besoin.
+                Venez profitez d'un en-cas et d'une boisson en terasse ou autour des étangs. Vous pouvez aussi venir découvrir les délices de notre table d'hôte lors de notre rendez-vous mensuel.
               </p>
             </div>
           </div>
@@ -40,9 +36,8 @@ function Information() {
             <div className="info-text">
               <h3>Chiens</h3>
               <p>
-                Profitez de notre site en compagnie de votre fidèle compagnon,
-                les chiens sont les bienvenus sans laisse, mais veuillez rester
-                attentifs à leur comportement.
+                Vos fidèle compagnon sont les bienvenus a la pisciculture mais 
+                il doivent être tenus en laisse.
               </p>
             </div>
           </div>
@@ -54,7 +49,7 @@ function Information() {
             <div className="info-text">
               <h3>PMR</h3>
               <p>
-                Notre site est accessible à tous ! Profitez d'un chemin dédié
+                Notre site est accessible à tous ! Un chemin est dédié
                 aux Personnes à Mobilité Réduite pour accéder facilement à notre
                 bar.
               </p>
@@ -66,9 +61,9 @@ function Information() {
           <div className="info-content">
             <FontAwesomeIcon icon={faCreditCard} className="info-icon" />
             <div className="info-text">
-              <h3>Mode de Paiement</h3>
+              <h3>Moyens de Paiements</h3>
               <p>
-                Nous acceptons les espèces ainsi que la carte bancaire.
+                Nous acceptons les réglements en espèces ainsi qu'en carte bancaire avec un minimum de 10€.
               </p>
             </div>
           </div>
@@ -78,10 +73,10 @@ function Information() {
           <div className="info-content">
             <FontAwesomeIcon icon={faTree} className="info-icon" />
             <div className="info-text">
-              <h3>Aire de pique-nique ombragée</h3>
+              <h3>Aménagements</h3>
               <p>
-                Profitez de plusieurs aires de pique-nique en bord d'étang
-                équipées de tables, barbecues et abris en cas de pluie.
+                Des Tables de pique-nique, des barbecues ainsi que des abris en cas de pluie sont a votre disposition
+                autour des écologiquetangs.
               </p>
             </div>
           </div>
@@ -93,8 +88,8 @@ function Information() {
             <div className="info-text">
               <h3>Vente sur Place</h3>
               <p>
-                Découvrez notre offre de vente sur place, où nous proposons des
-                truites fumées ou fraîches, disponibles sur demande.
+                Vous trouverez sur place tout le matériel de pêche dont vous pourrez avoir besoin, et nous proposons aussi de la
+                truite fumée ou fraîche.
               </p>
             </div>
           </div>
@@ -136,8 +131,7 @@ function Information() {
                 Contribuez à maintenir notre site propre en utilisant les
                 poubelles de tri disponibles. Nous disposons de containers pour
                 le recyclage, les ordures ménagères, le verre, et même un
-                compost, assurant ainsi une gestion écologique des déchets sur
-                place.
+                compost.
               </p>
             </div>
           </div>
