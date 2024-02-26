@@ -1,5 +1,5 @@
 import React from 'react';
-import Bannerhote from '../Components/Restauration/Bannerhote.js';
+import Bannerhote from '../Components/Restauration/Tabledhote.js';
 
 
 function Accueil() {

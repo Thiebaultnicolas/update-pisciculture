@@ -37,10 +37,6 @@
     color: #A5B857; /* Changez la couleur au survol */
   }
   
-  /* Supprime la marge à droite du dernier élément de la liste */
-  .header li:last-child {
-    margin-right: 0;
-  }
   
   /* Style pour les éléments de menu déroulant */
   .header .dropdown {
@@ -111,7 +107,7 @@
     width: 310px;
     height: 135px;
     margin-right: 15px;
-    margin-top: -0.6%; /* Ajustez la marge supérieure selon vos préférences */
+    margin-top: -3.6%; /* Ajustez la marge supérieure selon vos préférences */
   }
 
   .header-content {

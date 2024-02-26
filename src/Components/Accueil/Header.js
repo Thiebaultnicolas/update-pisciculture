@@ -20,7 +20,9 @@ function Header() {
   return (
     <div className="header">
       <div className="header-content">
-        <img src={NewLogoBleu} alt="Logo" className="new-logoBleu" />
+        <Link to={"/"}>
+          <img src={NewLogoBleu} alt="Logo" className="new-logoBleu" />
+        </Link>
         <ul>
           <li
             className={`dropdown ${isHoveredPeche ? "open" : ""}`}
@@ -60,7 +62,9 @@ function Header() {
             </div>
           </li>
           <li>Notre Produit</li>
+          <Link  to={"Recettes"}>
           <li>Recettes</li>
+          </Link>
           <li>Contact</li>
         </ul>
       </div>

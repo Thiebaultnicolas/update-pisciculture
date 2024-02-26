@@ -1,0 +1,91 @@
+/* Tabledhote.css */
+.banner-tabledhote {
+  position: relative;
+  height: 550px; /* Ajustez la hauteur de la bannière selon vos besoins */
+}
+
+.banner-tabledhote .imageBanniereAccueil {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -810px; /* Déplace l'image de 20 pixels vers le bas */
+}
+
+/* Ajout de la règle pour la classe banner-tabledhote */
+.banner-tabledhote.no-gradient::after {
+  display: none;
+}
+
+.menu-images-container {
+  display: flex;
+  justify-content: center; /* Centre les éléments dans la flex container */
+  align-items: flex-start; /* Aligne les éléments en haut de la flex container */
+  background-color: #f5f7fa;
+  padding: 10px;
+  
+}
+
+.menu-image:hover {
+  transform: scale(0.95); /* Ajustez le facteur d'échelle selon votre préférence */
+  transition: transform 0.3s ease; /* Ajoutez une transition pour un effet fluide */
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px; /* Ajoute une marge entre chaque menu */
+}
+
+.menu-item h3 {
+  font-family: "Salsa", cursive; /* Appliquer la police "Salsa" aux sous-titres (h3) */
+  text-align: center; /* Centre le sous-titre */
+}
+
+.menu-image {
+  max-width: 80%; /* Ajustez la largeur maximale selon vos besoins */
+  height: auto;
+  margin-bottom: 10px; /* Ajoute une marge en bas pour l'espace entre l'image et le texte */
+  border-radius: 10px; /* Ajoutez des coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoutez un léger effet d'ombre */
+}
+
+.menu-text {
+  text-align: left; /* Aligne le texte à gauche */
+}
+
+.centered-section {
+  text-align: center; /* Aligne le texte à gauche */
+  margin: auto;
+}
+
+.centered-section h2 {
+  font-family: "Salsa", cursive; /* Appliquer la police "Salsa" aux sous-titres (h2) */
+  font-size: 27px;
+  margin-bottom: 10px; /* Ajouter une marge en bas pour l'espace */
+}
+
+.centered-section p {
+  font-family: "DM Sans", sans-serif; /* Appliquer la police "DM Sans" aux paragraphes (p) */
+  font-size: 17px;
+  margin: 10px 0; /* Ajouter une marge en haut et en bas pour l'espace */
+}
+
+.menu-item button {
+  background-color: #a5b857;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+
+
+
