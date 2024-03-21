@@ -9,7 +9,7 @@ import {
   faFish,
   faRestroom,
   faSquareParking,
-  faTrash, 
+  faTrash,
 } from "@fortawesome/free-solid-svg-icons";
 import { faMugHot } from "@fortawesome/free-solid-svg-icons";
 import "../../Styles/Accueil/Information.css";
@@ -24,7 +24,9 @@ function Information() {
             <div className="info-text">
               <h3>Bar & Restaurant</h3>
               <p>
-                Venez profitez d'un en-cas et d'une boisson en terasse ou autour des étangs. Vous pouvez aussi venir découvrir les délices de notre table d'hôte lors de notre rendez-vous mensuel.
+                Venez profitez d'un en-cas et d'une boisson en terasse ou autour
+                des étangs. Vous pouvez aussi venir découvrir les délices de
+                notre table d'hôte lors de notre rendez-vous mensuel.
               </p>
             </div>
           </div>
@@ -36,7 +38,7 @@ function Information() {
             <div className="info-text">
               <h3>Chiens</h3>
               <p>
-                Vos fidèle compagnon sont les bienvenus a la pisciculture mais 
+                Vos fidèle compagnon sont les bienvenus a la pisciculture mais
                 il doivent être tenus en laisse.
               </p>
             </div>
@@ -49,8 +51,8 @@ function Information() {
             <div className="info-text">
               <h3>PMR</h3>
               <p>
-                Notre site est accessible à tous ! Un chemin est dédié
-                aux Personnes à Mobilité Réduite pour accéder facilement à notre
+                Notre site est accessible à tous ! Un chemin est dédié aux
+                Personnes à Mobilité Réduite pour accéder facilement à notre
                 bar.
               </p>
             </div>
@@ -63,7 +65,8 @@ function Information() {
             <div className="info-text">
               <h3>Moyens de Paiements</h3>
               <p>
-                Nous acceptons les réglements en espèces ainsi qu'en carte bancaire avec un minimum de 10€.
+                Nous acceptons les réglements en espèces ainsi qu'en carte
+                bancaire avec un minimum de 10€.
               </p>
             </div>
           </div>
@@ -75,8 +78,9 @@ function Information() {
             <div className="info-text">
               <h3>Aménagements</h3>
               <p>
-                Des Tables de pique-nique, des barbecues ainsi que des abris en cas de pluie sont a votre disposition
-                autour des écologiquetangs.
+                Des Tables de pique-nique, des barbecues ainsi que des abris en
+                cas de pluie sont a votre disposition autour des
+                écologiquetangs.
               </p>
             </div>
           </div>
@@ -88,8 +92,9 @@ function Information() {
             <div className="info-text">
               <h3>Vente sur Place</h3>
               <p>
-                Vous trouverez sur place tout le matériel de pêche dont vous pourrez avoir besoin, et nous proposons aussi de la
-                truite fumée ou fraîche.
+                Vous trouverez sur place tout le matériel de pêche dont vous
+                pourrez avoir besoin, et nous proposons aussi de la truite fumée
+                ou fraîche.
               </p>
             </div>
           </div>
@@ -101,8 +106,8 @@ function Information() {
             <div className="info-text">
               <h3>Sanitaires</h3>
               <p>
-                Notre site dispose de deux toilettes dont un 
-                accessible aux personnes a mobilité réduite.
+                Notre site dispose de deux toilettes dont un accessible aux
+                personnes a mobilité réduite.
               </p>
             </div>
           </div>

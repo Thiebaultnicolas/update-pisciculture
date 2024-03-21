@@ -12,6 +12,7 @@
   height: auto;
   display: block;
   margin: 0 auto;
+  height: 1150px;
 }
 
 .banner-accueil::after {

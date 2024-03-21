@@ -1,11 +1,11 @@
 import React from 'react';
-import Bannerhote from '../Components/Restauration/Tabledhote.js';
+import Travaux from '../Components/imgPageTravaux';
 
 
 function Accueil() {
     return (
         <>
-            <Bannerhote/>
+        <Travaux />
             {/* Ajoutez d'autres composants et contenu ici */}
         </>
     );

@@ -53,19 +53,23 @@ function Header() {
               }`}
             ></i>{" "}
             <div className="dropdown-content">
-              <Link to={"/"}>
+              <Link to={"Travaux"}>
                 <a href="#">Snacking</a>
               </Link>
-              <Link to={"table"}>
+              <Link to={"Travaux"}>
                 <a href="#">Table d'hôte</a>
               </Link>
             </div>
           </li>
+          <Link to={"Travaux"}>
           <li>Notre Produit</li>
-          <Link  to={"Recettes"}>
+          </Link>
+          <Link  to={"Travaux"}>
           <li>Recettes</li>
           </Link>
+          <Link to={"Travaux"}>
           <li>Contact</li>
+          </Link>
         </ul>
       </div>
     </div>
