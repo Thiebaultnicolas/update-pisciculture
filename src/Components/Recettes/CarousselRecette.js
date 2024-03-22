@@ -63,7 +63,6 @@ const CarousselRecette = () => {
       <div className="carrousel-recette-container">
         <div className="carrousel-content">
           <h2>Nous vous partageons nos recettes</h2>
-          <h3>Télecharger les ici : </h3>
           {/* Bouton de téléchargement */}
       <button onClick={() => downloadImage(images[carouselIndex])} className="download-button">
         Télécharger

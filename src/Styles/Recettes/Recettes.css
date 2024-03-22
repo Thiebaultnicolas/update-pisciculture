@@ -16,9 +16,9 @@
   
   .Banner-Recette .imageBanniereAccueil {
     width: 100%;
-    height: 800px;
+    height: 1079px;
     object-fit: cover;
     position: absolute;
-    top: -253px;
+    top: -240px;
     left: 0;
 }

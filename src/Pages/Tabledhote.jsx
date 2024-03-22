@@ -1,11 +1,11 @@
 import React from 'react';
-import Travaux from '../Components/imgPageTravaux';
+import Tabledhote from '../Components/Restauration/Tabledhote';
 
 
 function Accueil() {
     return (
         <>
-        <Travaux />
+        <Tabledhote/>
             {/* Ajoutez d'autres composants et contenu ici */}
         </>
     );

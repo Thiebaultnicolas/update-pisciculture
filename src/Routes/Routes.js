@@ -4,6 +4,7 @@ import Accueil from '../Pages/Accueil.jsx';
 import Illustration from '../Pages/Tabledhote.jsx';
 import Recettes from '../Pages/Recettes.jsx';
 import Tarif from '../Pages/Tarif.jsx';
+import Tabledhote from '../Pages/Tabledhote.jsx';
 
 
 function Path() {
@@ -12,6 +13,7 @@ function Path() {
             <Route path="/" element={<Accueil />} />
             <Route path="Recettes" element={<Recettes />} />
             <Route path="Tarif" element={<Tarif />} />
+            <Route path="Tabledhote" element={<Tabledhote />} />
             <Route path="Travaux" element={<Illustration />} />
         </Routes>
     );

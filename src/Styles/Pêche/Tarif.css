@@ -1,10 +1,13 @@
 .article-Tarif {
     display: grid;
     place-items: center; /* Centre horizontalement et verticalement */
-    height: 100vh; /* Ajustez la hauteur selon vos besoins */
+    height: 80vh; /* Ajustez la hauteur selon vos besoins */
 }
 
 .article-Tarif img {
-    width: 60%; /* Ajustez la taille de l'image selon vos besoins */
+    width: 68%; /* Ajustez la taille de l'image selon vos besoins */
 }
 
+.titre-tarif {
+    font-size: 35px;
+}
