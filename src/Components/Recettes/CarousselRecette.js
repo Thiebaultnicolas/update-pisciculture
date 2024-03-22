@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
+import "../../Styles/Recettes/CarousselRecette.css";
 import BackgroundRecette from "../../Assets/BackgroundRecette.jpg";
 import Recette1 from "../../Assets/Recette1.png";
 import Recette2 from "../../Assets/Recette2.png";
@@ -16,27 +18,27 @@ import Recette11 from "../../Assets/Recette11.png";
 import Recette12 from "../../Assets/Recette12.png";
 import Recette13 from "../../Assets/Recette13.png";
 import Recette14 from "../../Assets/Recette14.png";
-import "../../Styles/Recettes/CarousselRecette.css";
 
-function CarousselRecette() {
+const images = [
+  Recette1,
+  Recette2,
+  Recette3,
+  Recette4,
+  Recette5,
+  Recette6,
+  Recette7,
+  Recette8,
+  Recette9,
+  Recette10,
+  Recette11,
+  Recette12,
+  Recette13,
+  Recette14,
+];
+
+const CarousselRecette = () => {
   const [carouselIndex, setCarouselIndex] = useState(0);
-
-  const images = [
-    Recette1,
-    Recette2,
-    Recette3,
-    Recette4,
-    Recette5,
-    Recette6,
-    Recette7,
-    Recette8,
-    Recette9,
-    Recette10,
-    Recette11,
-    Recette12,
-    Recette13,
-    Recette14,
-  ]; // Ajoutez d'autres images selon vos besoins
+  
 
   useEffect(() => {
     if (carouselIndex >= images.length) {
@@ -45,51 +47,67 @@ function CarousselRecette() {
     if (carouselIndex < 0) {
       setCarouselIndex(images.length - 1);
     }
-  }, [carouselIndex, images.length]);
+  }, [carouselIndex]);
 
-  const handleDownload = (imageUrl, imageName) => {
+  const downloadImage = (imageUrl) => {
     const link = document.createElement('a');
     link.href = imageUrl;
-    link.download = imageName;
+    link.download = `recette_${carouselIndex + 1}.png`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   return (
-    <div
-      className="carrousel-recette-container"
-      style={{ backgroundImage: `url(${BackgroundRecette})` }}
-    >
-      <div className="carrousel-content">
-        <h2>Titre du Carrousel</h2>
-        <h3>Sous-titre du Carrousel</h3>
-        <p>Texte lorem...</p>
-      </div>
-      <Carousel
-        selectedItem={carouselIndex}
-        onChange={(index) => setCarouselIndex(index)}
-        infiniteLoop={true}
-      >
-        {images.map((image, index) => (
-          <div key={index} className="carousel-slide">
-            <img src={image} alt={`Recette ${index + 1}`} />
-            <button
-              className="download-button"
-              onClick={() => handleDownload(image, `Recette_${index + 1}.png`)}
+    <div className="carrousel-background" style={{ backgroundImage: `url(${BackgroundRecette})` }}>
+      <div className="carrousel-recette-container">
+        <div className="carrousel-content">
+          <h2>Nous vous partageons nos recettes</h2>
+          <h3>Télecharger les ici : </h3>
+          {/* Bouton de téléchargement */}
+      <button onClick={() => downloadImage(images[carouselIndex])} className="download-button">
+        Télécharger
+      </button>
+        </div>
+        <div className="galerie">
+          {images.length > 1 && (
+            <div
+              onClick={() => setCarouselIndex(carouselIndex - 1)}
+              className="galerie_boutton_left"
+              aria-label="boutton de défilement"
             >
-              Télécharger
-            </button>
-          </div>
-        ))}
-      </Carousel>
-      {images.length > 1 && (
-        <span className="nombre_image">
-          {carouselIndex + 1}/{images.length}
-        </span>
-      )}
+              <FontAwesomeIcon icon={faChevronLeft} />
+            </div>
+          )}
+  
+          <img
+            src={images[carouselIndex]}
+            alt={`Recette ${carouselIndex + 1}`}
+            className="galerieimg"
+          />
+  
+          {images.length > 1 && (
+            <div
+              onClick={() => setCarouselIndex(carouselIndex + 1)}
+              className="galerie_boutton_right"
+              aria-label="boutton de défilement"
+            >
+              <FontAwesomeIcon icon={faChevronRight} />
+            </div>
+          )}
+  
+        </div>
+  
+        {images.length > 1 && (
+          <span className="nombre_image">
+            {carouselIndex + 1}/{images.length}
+          </span>
+        )}
+      </div>
+  
+      
     </div>
   );
-}
+};
 
 export default CarousselRecette;

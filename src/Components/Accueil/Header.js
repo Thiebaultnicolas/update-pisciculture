@@ -4,12 +4,12 @@ import NewLogoBleu from "../../Assets/NewlogoBleu.png"; // Importez le nouveau l
 import { Link } from "react-router-dom";
 
 function Header() {
-  const [isHoveredPeche, setIsHoveredPeche] = useState(false); // État pour suivre le survol de "Pêche"
+  const [isHoveredTarif, setIsHoveredTarif] = useState(false); // État pour suivre le survol de "Tarif"
   const [isHoveredRestauration, setIsHoveredRestauration] = useState(false); // État pour suivre le survol de "Restauration"
 
-  // Fonction pour gérer le survol de "Pêche"
-  const handleHoverPeche = () => {
-    setIsHoveredPeche(!isHoveredPeche); // Inverse l'état du survol
+  // Fonction pour gérer le survol de "Tarif"
+  const handleHoverTarif = () => {
+    setIsHoveredTarif(!isHoveredTarif); // Inverse l'état du survol
   };
 
   // Fonction pour gérer le survol de "Restauration"
@@ -25,19 +25,18 @@ function Header() {
         </Link>
         <ul>
           <li
-            className={`dropdown ${isHoveredPeche ? "open" : ""}`}
-            onMouseEnter={handleHoverPeche}
-            onMouseLeave={handleHoverPeche}
+            className={`dropdown ${isHoveredTarif ? "open" : ""}`}
+            onMouseEnter={handleHoverTarif}
+            onMouseLeave={handleHoverTarif}
           >
             Pêche
             <i
               className={`fas ${
-                isHoveredPeche ? "fa-chevron-up" : "fa-chevron-down"
+                isHoveredTarif ? "fa-chevron-up" : "fa-chevron-down"
               }`}
             ></i>{" "}
             <div className="dropdown-content">
-              <a href="#">Demi-Journée</a>
-              <a href="#">Journée</a>
+            <Link to={"Tarif"}>Tarif</Link>
               <a href="#">Réservation</a>
             </div>
           </li>
@@ -62,13 +61,13 @@ function Header() {
             </div>
           </li>
           <Link to={"Travaux"}>
-          <li>Notre Produit</li>
+            <li>Notre Produit</li>
           </Link>
-          <Link  to={"Travaux"}>
-          <li>Recettes</li>
+          <Link to={"Recettes"}>
+            <li>Recettes</li>
           </Link>
           <Link to={"Travaux"}>
-          <li>Contact</li>
+            <li>Contact</li>
           </Link>
         </ul>
       </div>

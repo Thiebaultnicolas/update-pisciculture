@@ -1,4 +1,3 @@
-// Banner.js
 import React from 'react';
 import "../../Styles/Accueil/Banner.css";
 import NewLogo from "../../Assets/Newlogo.png";

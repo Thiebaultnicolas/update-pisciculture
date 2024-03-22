@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFish, faFishFins  } from "@fortawesome/free-solid-svg-icons";
 import "../../Styles/Accueil/Article.css";
 import EtangBouriche from "../../Assets/EtangBouriche.jpg";
+import { Link } from "react-router-dom";
 
 // Définition du composant Article
 function Article() {
@@ -62,6 +63,7 @@ function Article() {
             appréciée de nos clients pour sa qualité<br></br>gustative.
           </p>
           <div className="Button-evenements">
+          <Link to={"Travaux"}>
             <button onClick={handleButtonClick} onMouseOver={handleButtonHover}>
               Événements à venir
               <div className={confettiAnimation}>
@@ -74,6 +76,7 @@ function Article() {
                 </div>
               </div>
             </button>
+            </Link>
           </div>
         </div>
         <div className="article-image">
