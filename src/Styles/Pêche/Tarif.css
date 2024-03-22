@@ -6,8 +6,9 @@
 
 .article-Tarif img {
     width: 68%; /* Ajustez la taille de l'image selon vos besoins */
+    margin-bottom: 25px;
 }
 
 .titre-tarif {
-    font-size: 35px;
+    font-size: 32px;
 }
