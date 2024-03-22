@@ -53,7 +53,7 @@ function Bannerhote() {
         <div className="menu-item">
           <h3>Sous-titre du menu 1</h3>
           <img src={MenuImage1} alt="Menu 1" className="menu-image" />
-          <button className="download-button" onClick={() => handleDownload(MenuImage1)}>
+          <button className="download-button-table" onClick={() => handleDownload(MenuImage1)}>
             Télécharger le menu
           </button>
         </div>
@@ -61,7 +61,7 @@ function Bannerhote() {
         <div className="menu-item">
           <h3>Sous-titre du menu 2</h3>
           <img src={MenuImage2} alt="Menu 2" className="menu-image" />
-          <button className="download-button" onClick={() => handleDownload(MenuImage2)}>
+          <button className="download-button-table" onClick={() => handleDownload(MenuImage2)}>
             Télécharger le menu
           </button>
         </div>

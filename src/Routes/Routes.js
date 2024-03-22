@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Accueil from '../Pages/Accueil.jsx';
-import Illustration from '../Pages/Tabledhote.jsx';
+import Illustration from '../Components/imgPageTravaux.js';
 import Recettes from '../Pages/Recettes.jsx';
 import Tarif from '../Pages/Tarif.jsx';
 import Tabledhote from '../Pages/Tabledhote.jsx';

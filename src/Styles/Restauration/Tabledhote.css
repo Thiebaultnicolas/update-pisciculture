@@ -71,7 +71,7 @@
   margin: 10px 0; /* Ajouter une marge en haut et en bas pour l'espace */
 }
 
-.menu-item button {
+.download-button-table {
   background-color: #a5b857;
   color: #f2f2f2;
   text-transform: uppercase;

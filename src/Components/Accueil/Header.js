@@ -55,7 +55,7 @@ function Header() {
               <Link to={"Travaux"}>
                 <a href="#">Snacking</a>
               </Link>
-              <Link to={"Travaux"}>
+              <Link to={"Tabledhote"}>
                 <a href="#">Table d'hôte</a>
               </Link>
             </div>
