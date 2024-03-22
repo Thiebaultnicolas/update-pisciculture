@@ -1,5 +1,4 @@
 import React from 'react';
-import BackgroundRecette from "../../Assets/BackgroundRecette.jpg";
 import TarifPêche from "../../Assets/TarifPêche.png";
 import "../../Styles/Pêche/Tarif.css";
 

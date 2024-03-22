@@ -1,6 +1,4 @@
 import React from 'react';
-import Banner from '../Accueil/Banner.js';
-import TabledhoteBanner from '../../Assets/Salle2.jpg';
 import MenuImage1 from '../../Assets/Menu16.jpg'; // Importez la première image du menu
 import MenuImage2 from '../../Assets/Menu20.jpg'; // Importez la deuxième image du menu
 import "../../Styles/Restauration/Tabledhote.css";
@@ -17,8 +15,6 @@ function Bannerhote() {
 
   return (
     <>
-      <Banner image={TabledhoteBanner} titre="Titre de la table d'hôte" showLogo={false} showGradient={false} className="banner-tabledhote" />
-      
       <div className="centered-section">
         <h2>Titre de la section</h2>
         <p>

@@ -7,7 +7,7 @@ function Bannerrecette () {
   
     return (
       <>
-        <Banner image={RecetteBanner} titre="Titre de la Recette" showLogo={false} showGradient={false} className="banner-tabledhote Banner-Recette" />
+        <Banner image={RecetteBanner} titre="Titre de la Recette" showLogo={false} showGradient={false} className=" Banner-Recette" />
         
       
         {/* Ajoutez le reste de votre contenu pour le composant Tabledhote ici */}
