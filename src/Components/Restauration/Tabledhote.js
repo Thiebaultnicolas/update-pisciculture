@@ -16,38 +16,21 @@ function Bannerhote() {
   return (
     <>
       <div className="centered-section">
-        <h2>Titre de la section</h2>
-        <p>
-          La pisciculture du Claireau est située dans l’Eure (27) dans le
-          village <br></br> de Appeville dit Annebault entre Rouen et Le
-          Havre. Notre site se trouve <br></br> au cœur de la vallée de
-          Becquerel et est bordé par la forêt domaniale de <br></br> Montfort
-          sur Risle. Classée Natura 2000, de nombreuses espèces animales
-          <br></br> et végétales cohabitent.
+        <h2>Notre table d'hôte</h2>
+        <p className='description-repas'>
+          Nous vous accueillons pour vos repas de groupes, de 10 à 80 personnes. <br></br> 
+          Nous sommes ouverts à la restauration toute l'année, uniquement sur réseravtion. <br></br> 
+          <br></br> 
+          <strong>Depuis 2024, nous vous proposons égalerment Les midi à la table du Claireau, pour des repas individuel ouverts à tous.</strong> <br></br>
+          Une fois par mois, seul ou accompagné, vous pourrez venir passer un agréable moment à notre table. <br></br>
+          Les dates et menus sont à retrouver sur la page d'accueil, dans l'onglet "événements à venir" <br></br>
         </p>
-        <p>
-          L’activité comprend la production, la pêche, le laboratoire de
-          fumage,
-          <br></br>
-          la restauration et l’accueil du public. L’atelier fumage a été
-          repensé<br></br> et restructuré afin de répondre aux normes
-          européennes. La pisciculture<br></br> compte 5 bassins d’alevinage,
-          10 bassins de grossissement et 3 étangs<br></br> destinés à la
-          pêche.
-        </p>
-        <p>
-          L’ensemble du site est alimenté par une source, le Clérot. La
-          qualité de l’eau,<br></br> l’alimentation et toute l’attention
-          apportée au respect du cycle de grossissement<br></br> des truites
-          sont un gage de qualité. Depuis de nombreuses années, notre
-          spécialité<br></br> la truite fumée est reconnue et est très
-          appréciée de nos clients pour sa qualité<br></br>gustative.
-        </p>
+      
       </div>
 
       <div className="menu-images-container">
         <div className="menu-item">
-          <h3>Sous-titre du menu 1</h3>
+          <h3>Formule 1 </h3>
           <img src={MenuImage1} alt="Menu 1" className="menu-image" />
           <button className="download-button-table" onClick={() => handleDownload(MenuImage1)}>
             Télécharger le menu
@@ -55,7 +38,7 @@ function Bannerhote() {
         </div>
 
         <div className="menu-item">
-          <h3>Sous-titre du menu 2</h3>
+          <h3>Formule 2</h3>
           <img src={MenuImage2} alt="Menu 2" className="menu-image" />
           <button className="download-button-table" onClick={() => handleDownload(MenuImage2)}>
             Télécharger le menu

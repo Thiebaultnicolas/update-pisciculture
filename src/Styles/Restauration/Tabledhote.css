@@ -8,6 +8,11 @@
   
 }
 
+.menu-images-container h3 {
+  color :#a5b857;
+  font-size: 25px;
+}
+
 .menu-image:hover {
   transform: scale(0.95); /* Ajustez le facteur d'échelle selon votre préférence */
   transition: transform 0.3s ease; /* Ajoutez une transition pour un effet fluide */
@@ -40,12 +45,13 @@
 .centered-section {
   text-align: center; /* Aligne le texte à gauche */
   margin: auto;
+  margin-bottom: 35px;
 }
 
 .centered-section h2 {
   font-family: "Salsa", cursive; /* Appliquer la police "Salsa" aux sous-titres (h2) */
-  font-size: 27px;
-  margin-bottom: 10px; /* Ajouter une marge en bas pour l'espace */
+  font-size: 32px;
+  margin-bottom: 30px; /* Ajouter une marge en bas pour l'espace */
 }
 
 .centered-section p {

@@ -1,7 +1,6 @@
 .article-Tarif {
     display: grid;
     place-items: center; /* Centre horizontalement et verticalement */
-    height: 80vh; /* Ajustez la hauteur selon vos besoins */
 }
 
 .article-Tarif img {

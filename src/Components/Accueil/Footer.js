@@ -43,7 +43,8 @@ function Footer() {
             <h4>CONTACTEZ NOUS</h4>
             <p>
               Par mail : le.claireau@gmail.com<br></br>
-              Par téléphone : 09 66 91 06 15 au 02
+              Par téléphone : 09 66 91 06 15 <br></br>
+              ou 02 32 56 06 15
             </p>
           </div>
         </div>

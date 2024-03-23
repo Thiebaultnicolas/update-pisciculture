@@ -33,7 +33,8 @@ function Reservation() {
               (maxi 40 pêcheurs) : 80,5Kg dont 7,100Kg offert = 623,85€ Remise
               de 60,35€ T.T.C
             </p>
-          </div>
+          </div>npm run start
+          
           <div className="left-column">
             <h2>Grand étang</h2>
             <p>
