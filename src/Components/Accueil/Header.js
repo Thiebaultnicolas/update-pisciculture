@@ -37,7 +37,7 @@ function Header() {
             ></i>{" "}
             <div className="dropdown-content">
             <Link to={"Tarif"}>Tarif</Link>
-              <a href="#">Réservation</a>
+            <Link to={"Reservation"}>Réservation</Link>
             </div>
           </li>
           <li

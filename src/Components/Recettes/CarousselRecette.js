@@ -62,7 +62,7 @@ const CarousselRecette = () => {
     <div className="carrousel-background" style={{ backgroundImage: `url(${BackgroundRecette})` }}>
       <div className="carrousel-recette-container">
         <div className="carrousel-content">
-          <h2>Nous vous partageons nos recettes</h2>
+          <h2 className="titre-recette">Nous vous partageons nos recettes</h2>
           {/* Bouton de téléchargement */}
       <button onClick={() => downloadImage(images[carouselIndex])} className="download-button">
         Télécharger

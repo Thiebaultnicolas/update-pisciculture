@@ -30,6 +30,7 @@
 .article h2,
 .article h3 {
   margin-left: 17%; /* Ajustez la marge à gauche pour l'alignement */
+  text-align: center;
 }
 
 /* Style pour les paragraphes */
