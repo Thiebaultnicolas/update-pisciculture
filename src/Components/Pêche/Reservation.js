@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Styles/Pêche/Reservation.css";
-import imgReservation from "../../Assets/Patron.jpg";
+import imgReservation from "../../Assets/etang-reservation.jpg";
 
 function Reservation() {
   return (

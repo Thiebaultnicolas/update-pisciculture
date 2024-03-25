@@ -26,8 +26,9 @@ font-size: 32px;
 }
 
 .img-reservation img {
-  height: 460px;
-  width: 90%;
+  height: 650px;
+  width: 100%;
   border-radius: 3px 3px 3px 3px;
   box-shadow: -12px 12px 57px 10px rgba(16, 45, 94, 0.17);
+
 }

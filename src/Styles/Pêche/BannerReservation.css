@@ -1,10 +1,10 @@
 .Banner-reservation img {
-    width: 100%;
-    height: 1000px;
-    object-fit: cover;
-    position: absolute;
-    top: 75px;
-    left: 0;
+  width: 100%;
+  height: 1700px;
+  object-fit: cover;
+  position: absolute;
+  top: -1045px;
+  left: 0;
 }
 
 /* Permet de gerer l'affiche du trait vertical en dessous la banniere */
