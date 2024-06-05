@@ -71,3 +71,29 @@
     line-height: 1.5; /* Ajustez la valeur selon vos préférences */
   }
 
+  
+/* desktop */
+@media screen and (min-width: 768px) {
+
+ }
+
+
+/* mobile*/
+@media screen and (max-width: 767px) {
+  .footer {
+    display: block;
+    background-color: #5D7052;
+    color: #fff;
+    text-align: center;
+}
+}
+
+/* tablette*/
+@media screen and (min-width:768px) and (max-width:991px){
+
+}
+
+/* media 13 pouces*/
+@media screen and (min-width:992px) and (max-width:1440px){
+  
+}

@@ -1,6 +1,6 @@
 import React from "react";
-import "../Styles/illustration.css";
-import imgTravaux from "../../src/Assets/siteConstruction.png";
+import "../../Styles/illustration.css";
+import imgTravaux from "../../Assets/siteConstruction.png";
 
 
 

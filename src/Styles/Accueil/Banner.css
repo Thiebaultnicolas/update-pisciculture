@@ -39,3 +39,48 @@
   margin-left: 25px;
 }
 
+/* desktop */
+@media screen and (min-width: 768px) {
+
+}
+
+
+/* mobile*/
+@media screen and (max-width: 767px) {
+
+  .imageBanniereAccueil {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-accueil {
+  height: auto;
+}
+
+.banner-accueil::after {
+  background: none;
+}
+
+
+
+}
+
+/* tablette*/
+@media screen and (min-width:768px) and (max-width:991px){
+
+}
+
+/* media 13 pouces*/
+@media screen and (min-width:992px) and (max-width:1440px){
+ 
+}

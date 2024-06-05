@@ -1,14 +1,21 @@
+.background-container {
+  background-color: #f5f7fa;
+  padding: 20px; /* ajustez selon vos préférences */
+}
+
 .centered-title {
   text-align: center;
 }
-.title-etang  {
-    font-size: 32px;
+
+.title-etang {
+  font-size: 32px;
   font-family: "Salsa", cursive;
 }
+
 .etang {
   display: flex;
-  justify-content: space-around;
-  margin-top:80px;
+  justify-content: space-evenly;
+  margin-top: 80px;
   margin-bottom: 80px;
 }
 
@@ -17,18 +24,44 @@
 }
 
 .content h2 {
-font-size: 32px;
+  font-size: 32px;
   font-family: "Salsa", cursive;
 }
 
 .content p {
-    font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
+}
+
+.img-reservation {
+  order: -1; /* Change l'ordre de l'affichage */
 }
 
 .img-reservation img {
   height: 650px;
   width: 100%;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 3px;
   box-shadow: -12px 12px 57px 10px rgba(16, 45, 94, 0.17);
+}
 
+.center-contrat {
+  text-align: center;
+}
+
+.btn-telecharger {
+  background-color: #a5b857; /* Couleur de fond */
+  color: #f2f2f2; /* Couleur du texte */
+  text-transform: uppercase; /* Mettez le texte en majuscules */
+  padding: 10px 20px; /* Ajustez les rembourrages selon vos besoins */
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Ajoutez une ombre portée pour faire ressortir le texte */
+  font-size: 20px; /* Ajustez la taille de la police pour augmenter la taille du texte */
+  overflow: hidden;
+  transition: transform 0.4s ease; /* Ajoutez une transition pour une animation douce */
+  margin-top: 25px;
+}
+
+
+.btn-telecharger:hover {
+  transform: scale(1.1); /* Applique un effet de zoom progressif lors du survol */
 }
